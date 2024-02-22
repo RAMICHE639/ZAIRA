@@ -241,6 +241,10 @@ body::after {
 </style>
 </head>
 <body>
+  <audio autoplay loop >
+    <source src="mus.mp3" type="audio/mp3">
+    Votre navigateur ne supporte pas l'élément audio.
+  </audio>
 <header class="header">
   <nav class="navbar">
     <h2 class="logo"><a href="#"><img src="img/ZAIRA_LOGO_TRANSPARENT_BLANC.png" height="80px" alt="Logo"/></a></h2>
@@ -264,6 +268,7 @@ body::after {
   </nav>
 </header>
 <section class="hero-section">
+
   <div class="hero">
     <h2>ZAIRA (COMING SOON)</h2>
     <p>
@@ -290,5 +295,17 @@ body::after {
   <a href="#" target="_blank" class="app-button">
     <img src="img/ASGP@4x.png" alt="WhatsApp Chat" width="120">
   </a>
+  <script>
+    // Créer un objet audio avec le fichier audio spécifié
+    var sound = new Howl({
+      src: ['mus.mp3']
+    });
+
+    // Jouer automatiquement le fichier audio lorsque la page se charge
+    sound.play();
+  </script>
+
+  
 </body>
 </html>
+
